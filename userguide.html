@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>UK TV Guide Widget: User Guide</title>
+        <style type="text/css">
+            @import "stylesheets/styles.css";
+        </style>
+    </head>
+    <body>
+        <div class="navigationBar">
+            <p id="titleText">UK TV Guide Widget</p>
+            <p id="widgetBy">A Widget by <a href="contact.html">Daniel Phillips</a></p>
+            <div class="navigationLinks">
+                <a href="index.html" class="navigationLink">Main</a>
+                <a href="download.html" class="navigationLink">Download</a>
+                <span id="activeLink">User Guide</span>
+                <a href="contact.html" class="navigationLink">Contact Me</a>
+            </div>
+        </div>
+        <h2>User Guide</h2>
+        <h3>Please select a link for more information:</h3>
+        <a href="#install">Installing the Widget</a><br />
+        <a href="#select">Selecting Channels to Display</a><br />
+        <a href="#channel">Viewing Channel Listings</a><br />
+        <a href="#nownext">Viewing Now &amp; Next Information</a><br />
+        <a href="#offline">Working Offline</a><br />
+        <a href="#uninstall">Uninstalling the Widget</a><br />
+
+        <a name="install"><h3>Installing the Widget</h3></a>
+        <h4>Installing the Widget</h4>
+        <p><b>Safari Users:</b>  If you have the <tt>Open "safe" files after downloading</tt> option enabled in Safari, it will automatically attempt to install the widget for you.  However, if you have it disabled, please follow the instructions for users with other web browsers.</p>
+        <p><b>Users of other web browsers:</b>  Once you have downloaded the Zip file containing the widget, double click the file to extract the contents.  This should create a file called <tt>UK TV Guide.wgdt</tt> in the same directory as the original Zip file.  Double-click this file to install the widget.</p>
+
+        <h4>Running the Widget</h4>
+        <p>After installing the widget, simply open Dashboard, click the + icon to open the widget selector and scroll through the options until you find the UK TV Guide widget icon.  Drag this icon to an empty location on your Dashboard and the widget will open.</p>
+
+        <p>If the widget does not seem to be working correctly after installation try completely uninstalling the widget (using the <a href="#uninstall">uninstallation instructions below</a>) and reinstalling it again.  You can check for new versions of the widget by clicking the <tt>Check for New Version</tt> button on the preferences side of the widget.</p>
+        <a name="select"><h3>Selecting Channels to Display</h3></a>
+        <img src="images/prefs.png">
+        <p>The first time that the widget is run, you will be immediately taken to the preferences side of the widget.  When the widget is first run, it will attempt to download a list of available channels.  If the preferences window appears and no channels appear to be listed, check your Internet connection and try clicking the <tt>Reload Channel List</tt> button again to reload the listings.</p>
+        <p>Once the channel list has been downloaded, simply click the checkboxes next to the names of the channels you want to see listing information for.  The channels selected in the preferences will be the channels that can be selected from the <tt>View Listing</tt> menu and are also the channels displayed in the Now &amp; Next view.</p>
+        <p>Normally, the TV Guide operates by downloading channel listings when required.  Once a listing has been downloaded, it will be used for approximately one week before more data needs to be downloaded from the Internet.  During the download process, it can take some time to retrieve the data-- which may give the impression that the widget is operating slowly.  If the <tt>Reload All Listings</tt> button is clicked, the widget will proceed to download channel listing information for all selected channels.  Clicking this button will ensure that at least one week's worth of listings have been stored to disk, meaning that the widget will not need to use the Internet until those listings become outdated.</p>
+        <p>Once you have finished selecting channels to view and downloading channel listings (if necessary), click the <tt>Done</tt> button to display the main TV guide.  Note that at least one channel must be selected to leave the preferences display.</p>
+        <a name="channel"><h3>Viewing Channel Listings</h3></a>
+        <img src="images/main.png">
+        <p>Upon leaving the preferences window, you will be presented with the main guide window.  Each row of the main display shows the name and start time of the programmes scheduled for the channel name displayed in the <tt>View Listing</tt> menu.  To view a listing for a different channel, simply select another channel from the <tt>View Listing</tt> menu.</p>
+        <p>The image to the right shows an example display from the widget.  The programme that is currently on air is highlighted with a green background and further detail about any programme can be obtained simply by clicking on the name of the programme.  Use the scrollbar at the side of the widget to scroll through the channel listings for the day.</p>
+        <p>To view listings for other days, simply select a new date from the <tt>Listing Date</tt> menu.</p>
+        <a name="nownext"><h3>Viewing Now &amp; Next Information</h3></a>
+        <img src="images/nownext.png">
+        <p>To obtain a quick overview of what is being shown on all selected channels, select <tt>Now &amp; Next</tt> from the <tt>View Listing</tt> menu.  This will display the programmes currently being shown and the programmes that will be on next.  Use the green arrows to page through the selected channels and click a programme name to obtain more details about that programme.</p>
+        <a name="offline"><h3>Working Offline</h3></a>
+        <p>To help modem users or people with with laptops, it is not necessary to keep a constant connection to the Internet to use this widget.  Once listings have been downloaded they are kept until they become out of date, requiring new data only to be obtained once a week.  To ensure that the full seven days of listings are downloaded before going offline, remember to click the <tt>Reload All Listings</tt> button in the widget preferences.  This will ensure that the most recent copy of all listings are downloaded before going offline.</p>
+
+        <a name="uninstall"><h3>Uninstalling the Widget</h3></a>
+        <p>To uninstall the widget, perform the following steps:</p>
+        <p><ol><li>Close the widget in Dashboard if it is still running.
+        <li>Click the + icon in Dashboard to open the widget list and click <tt>Manage Widgets...</tt> to open the list of all widgets installed on your machine.  Scroll down the list to the UK TV Guide widget, then click the red - symbol next to the widget name.  Click OK when Dashboard prompts you to move the widget to the Trash.
+        <li>Go to your Home directory, then <tt>Library</tt> then <tt>Caches</tt> and delete the folder named <tt>UKTVGuideWidget</tt>.
+        <li>Finally, return to your Home directory, and go into the <tt>Library</tt> directory and then <tt>Preferences</tt>.  Locate the file named <tt>widget-com.ponyfoam.uktvguide.plist</tt> and drag it to the Trash.
+        <li>Assuming you haven't left anything in the Trash you want to keep, empty the Trash and the widget is now completely uninstalled.
+        </ol>
+        <p class="copyright">&copy; 2005-2015 Daniel Phillips</p>
+    </body>
+</html>
